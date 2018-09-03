@@ -33,6 +33,8 @@ greentitle = "Green fluorescent proteins"
 greenxlabel = "time post fertilization [h]"
 #### ylabel
 greenylabel = "fluorescence intensity\nnormalized to control [A.U.]"
+#### in which order should the legend labels be plotted?
+greenplotorder = c("mGFPmut2", "mVenNB", "eGFP", "eGFPvarA206K", "eGFPvar", "Clover", "YFP", "Venus", "CFP")
 #### colors (needs to be at least the number of fluorescent proteins)
 greencolors = c("#c7e9c0", "#a1d99b", "#74c476", "#31a354", "#006d2c", "#a1d99b", "#74c476", "#31a354", "#006d2c")
 #### linetypes (needs to be at least the number of fluorescent proteins)
@@ -55,6 +57,8 @@ redtitle = "Red fluorescent proteins"
 redxlabel = "time post fertilization [h]"
 #### ylabel
 redylabel = "fluorescence intensity\nnormalized to control [A.U.]"
+#### in which order should the legend labels be plotted?
+redplotorder = c("mCherry", "mRFP", "mScarlet", "mRFP1*", "tagRFP", "mRuby2")
 #### colors (needs to be at least the number of fluorescent proteins)
 redcolors = c("#fcae91", "#fb6a4a", "#cb181d", "#fcae91", "#fb6a4a", "#cb181d", "#000000")
 #### linetypes (needs to be at least the number of fluorescent proteins)
@@ -239,6 +243,13 @@ for (i in plates) {
   redplates_temp$Mean = redplates_temp$Mean / redplates_temp$Mean_Ctr
   redplates = rbind(redplates[,columnvector], redplates_temp[,columnvector])
 }
+
+## changing the order of the legend labels
+greenplates$green = as.factor(greenplates$green)
+greenplates$green = factor(greenplates$green, levels = greenplotorder)
+
+redplates$red = as.factor(redplates$red)
+redplates$red = factor(redplates$red, levels = redplotorder)
 
 ## plotting green fluorescent proteins
 
