@@ -1,10 +1,11 @@
-# Enhancing in vivo imaging in Medaka
+# Enhancing in vivo-imaging of developmental processes in fish by overcoming pigmentation, anesthesia and fluorescent protein challenges.
 
-These scripts belong to the publication:
+These scripts belong to the publication: Enhancing in vivo-imaging of developmental processes in fish by overcoming pigmentation, anesthesia and fluorescent protein challenges.
+DOI:
 
 ## Getting Started
 
-These scripts can be used to perform the computation on the imaging data.
+These scripts can be used to perform the computation on the imaging data as shown in the publication.
 
 ### Prerequisites
 
@@ -19,22 +20,7 @@ Open the files with Fiji or R and use as described in the scripts.
 * [RStudio](https://www.rstudio.com/) - Operations on quantified data
 * [Fiji](http://fiji.sc/) - Image operations
 
-## Contributing
-
-Please read [CONTRIBUTING.md]
-
 ## Authors
 
 * **Colin Lischik** - *Initial work* - [colinlischik](https://github.com/colinlischik)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
-## Acknowledgments
-
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+* **Joachim Wittbrodt**
