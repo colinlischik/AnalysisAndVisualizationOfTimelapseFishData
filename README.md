@@ -1,7 +1,7 @@
 # Enhancing in vivo-imaging of developmental processes in fish by overcoming pigmentation, anesthesia and fluorescent protein challenges.
 
 These scripts belong to the publication: Enhancing in vivo-imaging of developmental processes in fish by overcoming pigmentation, anesthesia and fluorescent protein challenges.
-DOI:
+DOI: https://doi.org/10.1101/428763
 
 ## Getting Started
 
